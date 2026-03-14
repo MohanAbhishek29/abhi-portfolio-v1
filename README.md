@@ -1,16 +1,38 @@
-# React + Vite
+# Abhi Portfolio V1 🌑🏙️✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, premium portfolio built for **Jayavarapu Mohan Abhishek Gupta**, an aspiring Cloud Architect. This site is designed with a "Cloud Console" aesthetic, focusing on scalability, clean architecture, and a seamless cross-device experience.
 
-Currently, two official plugins are available:
+## 🚀 Live Links
+- **Deploy**: [abhi-portfolio-v1.netlify.app](https://abhi-portfolio-v1.netlify.app)
+- **Repo**: [github.com/MohanAbhishek29/abhi-portfolio-v1](https://github.com/MohanAbhishek29/abhi-portfolio-v1)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
+- **Cloud Console UI**: A dark, premium aesthetic using glassmorphism and custom CSS variables.
+- **Full Responsiveness**: Optimized for everything from ultra-wide monitors to small mobile devices.
+- **Live Contact Uplink**: Integrated with **EmailJS** for real-time inbox delivery.
+- **Dynamic Projects Showcase**: "The Box" (Modal system) for deep-diving into technical project details.
+- **Smart Navigation**: Zoom-scroll behavior and smooth page transitions with Framer Motion.
+- **Light/Dark Mode**: A "Sky & White" themed light mode for daytime viewing.
 
-## React Compiler
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Vite
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Styling**: Vanilla CSS (High-Performance)
+- **Contact Service**: EmailJS
+- **Deployment**: Netlify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
+- `src/pages`: Main view components (Skills, Projects, Certs).
+- `src/sections`: Reusable UI blocks (Hero, Education).
+- `src/data`: `portfolio.json` for centralized content management.
+- `src/styles`: Core design system in `globals.css`.
 
-## Expanding the ESLint configuration
+## ⚙️ Local Development
+1. Clone the repo: `git clone https://github.com/MohanAbhishek29/abhi-portfolio-v1.git`
+2. Install dependencies: `npm install`
+3. Run dev server: `npm run dev`
+4. Build for production: `npm run build`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+**Designed with precision. Architected for the cloud.** 🤜🤛
