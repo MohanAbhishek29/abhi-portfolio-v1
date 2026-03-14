@@ -1,0 +1,264 @@
+{
+  "personal": {
+    "name": "Jayavarapu Mohan Abhishek Gupta",
+    "nickname": "Call me Abhi",
+    "title": "Aspiring Cloud Engineer & AWS Enthusiast",
+    "bio": "I am a 3rd-year B.Tech CSE undergrad at Lovely Professional University. I specialize in backend architecture, C++ programming, and Cloud platforms. I love building highly optimized, real-world systems ranging from custom HTTP servers to cloud-based automation solutions.",
+    "email": "mohanabhishek269@gmail.com",
+    "phone": "+91-9392421941",
+    "github": "https://github.com/MohanAbhishek29",
+    "linkedin": "https://www.linkedin.com/in/mohan-abhishek-978825296",
+    "resume": "/Mohan_Abhishek_Resume.pdf"
+  },
+  "education": [
+    {
+      "id": "1",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "institution": "Lovely Professional University",
+      "duration": "Aug 2023 - Present",
+      "metricLabel": "CGPA",
+      "metricValue": "6.61"
+    },
+    {
+      "id": "2",
+      "degree": "Intermediate (PCM)",
+      "institution": "Tirumala Educational Institutes",
+      "duration": "Jun 2021 - Mar 2023",
+      "metricLabel": "Percentage",
+      "metricValue": "75.6%"
+    },
+    {
+      "id": "3",
+      "degree": "Secondary School Education",
+      "institution": "Tirumala Educational Institutes",
+      "duration": "Jun 2020 - Apr 2021",
+      "metricLabel": "Percentage",
+      "metricValue": "100%"
+    }
+  ],
+  "skills": {
+    "languages": [
+      { "name": "C", "icon": "devicon-c-plain" },
+      { "name": "C++", "icon": "devicon-cplusplus-plain" },
+      { "name": "Java", "icon": "devicon-java-plain" },
+      { "name": "Python", "icon": "devicon-python-plain" },
+      { "name": "HTML", "icon": "devicon-html5-plain" },
+      { "name": "CSS", "icon": "devicon-css3-plain" },
+      { "name": "JavaScript", "icon": "devicon-javascript-plain" }
+    ],
+    "cloud": [
+      { "name": "AWS (EC2, S3, RDS, Lambda, IAM)", "icon": "devicon-amazonwebservices-plain-wordmark" },
+      { "name": "Microsoft Azure", "icon": "devicon-azure-plain" },
+      { "name": "Docker", "icon": "devicon-docker-plain" },
+      { "name": "Kubernetes", "icon": "devicon-kubernetes-plain" },
+      { "name": "Terraform", "icon": "devicon-terraform-plain" }
+    ],
+    "tools": [
+      { "name": "Git", "icon": "devicon-git-plain" },
+      { "name": "GitHub", "icon": "devicon-github-original" },
+      { "name": "Data Structures & Algorithms", "icon": "custom-code" }
+    ],
+    "soft": [
+      "Goal-Oriented Planning",
+      "Problem-Solving",
+      "Adaptive Learning"
+    ]
+  },
+  "projects": [
+    {
+        "id": "p6",
+        "title": "Infinity Library DBMS",
+        "date": "Feb 2026",
+        "tags": ["JavaScript", "SQLite", "WebAssembly", "CSS3"],
+        "accent": true,
+        "description": "A premium cyberpunk-themed Library Management DBMS with in-browser SQLite, live data visualization, SQL query explainer, and glassmorphism UI.",
+        "githubLink": "https://github.com/MohanAbhishek29/Infinity-Library-DBMS",
+        "demoLink": "https://infinity-library-dbms.netlify.app/",
+        "modalContent": "Engineered a fully self-contained Database Management System using in-browser SQLite via WebAssembly — no XAMPP or external DB servers needed. Features include an interactive SQL code editor with syntax highlighting, live data visualization with Chart.js, a step-by-step SQL execution explainer, query history with local storage persistence, multiple cyberpunk themes, and one-click CSV export. Built entirely with vanilla JavaScript — no frameworks."
+    },
+    {
+        "id": "p4",
+        "title": "Quick Serve",
+        "date": "Feb 2026",
+        "tags": ["JavaScript", "Backend"],
+        "accent": false,
+        "description": "Instant service booking platform developed during a 24-hour Web-A-Thon utilizing geo-proximity routing.",
+        "githubLink": "https://github.com/MohanAbhishek29/QuickServe",
+        "demoLink": "https://quick-server.netlify.app/",
+        "modalContent": "Built during an intense 24-hour hackathon. Engineered a geo-proximity routing algorithm to connect nearby service providers with customers in real-time. Gained hands-on experience in rapid prototyping, full-stack integration, and optimizing database queries for location-based searches."
+    },
+    {
+        "id": "p5",
+        "title": "AWS Master Learning Platform",
+        "date": "Jan 2026",
+        "tags": ["AWS", "Education"],
+        "accent": true,
+        "description": "Interactive cloud computing educational platform designed to simplify complex AWS architectures for beginners.",
+        "githubLink": "https://github.com/MohanAbhishek29/AWS-Master-Learning-Platform",
+        "demoLink": "https://aws-master-lerning-platform.netlify.app/",
+        "modalContent": "Created an educational hub for aspiring cloud engineers. Designed interactive visualizations of AWS architectures, including VPCs, S3-CDN pipelines, and Lambda functions. Learned how to communicate complex technical concepts through visual storytelling and interactive UI components."
+    },
+    {
+        "id": "p3",
+        "title": "Quick-Suggest",
+        "date": "Nov 2025",
+        "tags": ["C++", "WinSock2"],
+        "accent": false,
+        "description": "A lightning-fast search engine built with a custom C++ HTTP server and Trie data structure for O(L) autocomplete.",
+        "githubLink": "https://github.com/MohanAbhishek29/Quick-Suggest",
+        "demoLink": "https://quick-suggest.netlify.app/",
+        "modalContent": "Developed a custom HTTP server from scratch using WinSock2. Implemented a Prefix Trie data structure to achieve instantaneous search suggestions. Deeply explored socket programming, memory management in C++, and high-performance string processing algorithms."
+    },
+    {
+        "id": "p2",
+        "title": "Cloud-Based-Turnstile-Access-Control-and-Attendance-System",
+        "date": "Aug 2025",
+        "tags": ["IoT", "Cloud"],
+        "accent": true,
+        "description": "Secure access control system integrating ID card scanning and fingerprint authentication for enhanced security.",
+        "githubLink": "https://github.com/MohanAbhishek29/Cloud-Based-Turnstile-Access-Control-and-Attendance-System",
+        "modalContent": "Architected a real-time attendance system connecting hardware sensors to a cloud backend. Implemented secure authentication protocols for ID scanning and facial recognition data. This project taught me how to handle asynchronous data streams and ensure reliable connectivity between IoT devices and cloud infrastructure."
+    },
+    {
+        "id": "p1",
+        "title": "Dosa House",
+        "date": "Jun 2025",
+        "tags": ["HTML5", "CSS3", "JavaScript"],
+        "accent": false,
+        "description": "Full-featured restaurant website with interactive UI, optimized for performance and accessibility across devices.",
+        "githubLink": "https://github.com/MohanAbhishek29/Dosa-House",
+        "demoLink": "https://dosa-house.netlify.app/",
+        "modalContent": "Built a high-performance restaurant landing page focusing on fluid UX and responsive design. Learned how to manage complex component state and implemented advanced CSS animations to mimic a premium dining experience. Optimized for accessibility and fast load times."
+    }
+  ],
+  "experience": [
+    {
+      "role": "C++ Programming: OOPs and DSA Trainee",
+      "organization": "CSE PATHSHALA",
+      "duration": "Jun 2025 - Jul 2025",
+      "description": "Completed an intensive program focusing on core DSA and OOPs in C++. Implemented arrays, linked lists, trees, and optimized algorithms for time-complexity.",
+      "certificateLink": "https://drive.google.com/file/d/1RWbMp3bASxq8zgFt_1QIDSlUaCTpq9iQ/view?usp=drive_link"
+    }
+  ],
+  "certifications": [
+    { 
+      "title": "Social Networks", 
+      "issuer": "NPTEL", 
+      "date": "Oct 2025",
+      "link": "https://drive.google.com/file/d/1PYuFQeVumaEkUb7o7KTiQ_EDj-12kE5-/view?usp=drive_link",
+      "modalContent": "Mastered the fundamental concepts of social network analysis, graph theory, and information flow. Analyzed large-scale connectivity patterns and understood the mechanics of viral growth and network influence."
+    },
+    { 
+      "title": "ChatGPT Made Easy: AI Essentials for Beginners", 
+      "issuer": "Udemy", 
+      "date": "Aug 2025",
+      "link": "https://drive.google.com/file/d/1t8WR0oAV7oqfyBlE0WSMM-SN3mVIGWjV/view?usp=drive_link",
+      "modalContent": "Deep dive into OpenAI's ChatGPT and AI fundamentals. Mastered prompt engineering techniques, understood AI safety, and explored practical ways to integrate AI assistants into daily productivity and development workflows."
+    },
+    { 
+      "title": "Master Generative AI & Tools", 
+      "issuer": "Udemy", 
+      "date": "Aug 2025",
+      "link": "https://drive.google.com/file/d/1EJHQ76zjh-N1fmp4otG4sfAuI60JM9jy/view?usp=drive_link",
+      "modalContent": "Comprehensive training in various GenAI tools and techniques. From text generation to image synthesis, this course covered the full spectrum of modern AI capabilities for productive development workflows."
+    },
+    { 
+      "title": "Build Generative AI Apps and Solutions", 
+      "issuer": "Infosys Springboard", 
+      "date": "Aug 2025",
+      "link": "https://drive.google.com/file/d/1kot6UbO_LHQwhaFsZAAQ73sUpjZ-35aX/view?usp=drive_link",
+      "modalContent": "Explored the practical implementation of LLMs and generative agents. Learned how to prompt engineer effectively, integrate AI APIs into web applications, and build automated solutions using cutting-edge AI frameworks."
+    },
+    { 
+      "title": "TCP/IP and Advanced Topics", 
+      "issuer": "University of Colorado", 
+      "date": "Nov 2024",
+      "link": "https://drive.google.com/file/d/10P3S7zp8_83Bg0MI8MPne-52yICE-gH8/view?usp=drive_link",
+      "modalContent": "Mastered complex network protocols including TCP retransmission, congestion control, and flow control. Explored advanced IP addressing, routing optimization, and the inner workings of internet transport layers."
+    },
+    { 
+      "title": "Packet Switching Networks and Algorithms", 
+      "issuer": "University of Colorado", 
+      "date": "Nov 2024",
+      "link": "https://drive.google.com/file/d/1lHbO56h9xRhAvRx1yUdqGtzKOxkxE15G/view?usp=drive_link",
+      "modalContent": "Learned the core principles of packet switching, routing algorithms, and network queuing theory. Analyzed performance metrics for different network topologies and switching fabrics."
+    },
+    { 
+      "title": "Peer-to-Peer Protocols and Local Area Networks", 
+      "issuer": "University of Colorado", 
+      "date": "Oct 2024",
+      "link": "https://drive.google.com/file/d/1MJCCqKalL1IMOuuQzNJdg6YI3VSG2i5H/view?usp=drive_link",
+      "modalContent": "explored decentralized P2P network architectures and standard LAN protocols. Gained deep insight into MAC sublayers, Ethernet standards, and Distributed Hash Tables (DHTs)."
+    },
+    { 
+      "title": "Fundamentals of Network Communication", 
+      "issuer": "University of Colorado", 
+      "date": "Sep 2024",
+      "link": "https://drive.google.com/file/d/1Bt_kNvxhdtSLg9s1JflSbV4hIW7bkDs1/view?usp=drive_link",
+      "modalContent": "Comprehensive introduction to the OSI model, physical layer signaling, and data link layer framing. Established the foundational knowledge required for advanced cloud networking."
+    },
+    { 
+      "title": "The Bits and bytes in networking", 
+      "issuer": "Google", 
+      "date": "Sep 2024",
+      "link": "https://drive.google.com/file/d/1pHbR_O_5nUZn_KLwmxPiSfaIS7Jvj5K5/view?usp=drive_link",
+      "modalContent": "Gained a deep understanding of computer networking fundamentals, including TCP/IP models, DNS, DHCP, and global internet infrastructure. This certification provided the bedrock for my cloud engineering expertise."
+    }
+  ],
+  "achievements": [
+    { 
+      "title": "Web-A-Thon 2.0", 
+      "issuer": "LPU", 
+      "date": "Feb 2026",
+      "link": "https://drive.google.com/file/d/12AKc8Gp5Z0rOzSN1Cz6DnaASD6a95PG4/view?usp=drive_link",
+      "modalContent": "Secured a top position by building 'Quick Serve' in just 24 hours. Validated expertise in rapid full-stack prototyping, geo-proximity logic, and cloud-ready backend architectures."
+    },
+    { 
+      "title": "AWS Cloud Architecture Badge", 
+      "issuer": "AWS Academy", 
+      "date": "Jan 2026",
+      "link": "https://drive.google.com/file/d/15ZVUqKr1sSMQk1EsKipPcgnPRrSW_Pgk/view?usp=sharing",
+      "modalContent": "Successfully completed AWS Academy training for Cloud Architecture. Validated skills in designing scalable, fault-tolerant systems on AWS, including EC2 scaling, S3 storage management, and RDS database integration."
+    },
+    { 
+      "title": "Cambridge Lingual Skill Exam", 
+      "issuer": "Cambridge", 
+      "date": "Oct 2024",
+      "link": "https://drive.google.com/file/d/18sBlJU6kZiofkWEQT5l1mup91OR29xMI/view?usp=drive_link",
+      "modalContent": "Refined global communication standards and professional English proficiency for cross-border collaboration."
+    },
+    { 
+      "title": "Binary Blitz Hackathon", 
+      "issuer": "LPU", 
+      "date": "Apr 2024",
+      "link": "https://drive.google.com/file/d/1CsjqWVMl1BzgF57whWhfGG7OsG21MQLw/view?usp=drive_link",
+      "modalContent": "Solved complex algorithmic challenges and optimized data structure implementations under pressure."
+    }
+  ],
+  "hackathons": {
+    "summary": "\"Consistently sharpening algorithmic logic and data structure implementation. Solved 100+ complex DSA problems using C++ across various coding platforms.\"",
+    "events": [
+      {
+        "title": "Web-A-Thon 2.0",
+        "date": "Feb 2026",
+        "description": "Built 'Quick Serve' instant service platform in 24 hours.",
+        "link": "https://drive.google.com/file/d/12AKc8Gp5Z0rOzSN1Cz6DnaASD6a95PG4/view?usp=drive_link",
+        "modalContent": "Developed a full-stack booking system with real-time location tracking in just one day. Focused on rapid backend development and a clean mobile-first interface. This event solidified my ability to deliver quality code under tight deadlines."
+      },
+      {
+        "title": "Binary Blitz Hackathon",
+        "date": "Apr 2024",
+        "description": "Participated in Apr 2024.",
+        "link": "https://drive.google.com/file/d/1CsjqWVMl1BzgF57whWhfGG7OsG21MQLw/view?usp=drive_link",
+        "modalContent": "Collaborated with a cross-functional team to solve algorithmic challenges. Focused on data structure optimization and competitive programming techniques."
+      },
+      {
+        "title": "Cambridge Lingual Skill Exam",
+        "date": "Oct 2024",
+        "description": "Participated to enhance communication proficiency.",
+        "link": "https://drive.google.com/file/d/18sBlJU6kZiofkWEQT5l1mup91OR29xMI/view?usp=drive_link",
+        "modalContent": "Aimed at refining global communication standards. Improved technical presentation skills and professional English proficiency for cross-border collaboration."
+      }
+    ]
+  }
+}
