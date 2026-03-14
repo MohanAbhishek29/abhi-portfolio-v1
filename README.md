@@ -31,5 +31,18 @@ I’m an aspiring Cloud Architect currently navigating my 3rd year of B.Tech at 
 2. `npm install`
 3. `npm run dev`
 
+## 📧 Set Up Your Own Contact Form
+If you're using my repo and want to make the contact form work for yourself, you'll need to use [EmailJS](https://www.emailjs.com/). 
+
+1. Create a free account on EmailJS.
+2. Create a `.env` file in the root of the project.
+3. Add your own keys like this:
+   ```env
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+4. Done! The app will automatically use these variables to power your messages.
+
 ---
 **Think first, code later, and always keep architecting.** 🤫🔥🌑☁️
