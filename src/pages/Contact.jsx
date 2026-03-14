@@ -18,10 +18,10 @@ const Contact = () => {
     e.preventDefault();
     setStatus('sending');
 
-    // Real EmailJS IDs provided by user
-    const SERVICE_ID = "service_bfinm9r";
-    const TEMPLATE_ID = "template_n9f1rcq";
-    const PUBLIC_KEY = "GLbTckv1ntPcD6Vby";
+    // Environment variables for security
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     if (SERVICE_ID === "YOUR_SERVICE_ID") {
       // For demo purposes, if keys aren't set, simulate success after 1.5s
