@@ -3,7 +3,7 @@
 A high-performance, premium portfolio built for **Jayavarapu Mohan Abhishek Gupta**, an aspiring Cloud Architect. This site is designed with a "Cloud Console" aesthetic, focusing on scalability, clean architecture, and a seamless cross-device experience.
 
 ## 🚀 Live Links
-- **Deploy**: [abhi-portfolio-v1.netlify.app](https://abhi-portfolio-v1.netlify.app)
+- **Deploy**: [mohan-abhishek-portfolio.netlify.app](https://mohan-abhishek-portfolio.netlify.app/)
 - **Repo**: [github.com/MohanAbhishek29/abhi-portfolio-v1](https://github.com/MohanAbhishek29/abhi-portfolio-v1)
 
 ## ✨ Key Features
