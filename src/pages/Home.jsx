@@ -5,7 +5,9 @@ import Skills from '../sections/Skills';
 import Projects from '../sections/Projects';
 import Certifications from '../sections/Certifications';
 import AchievementsSection from '../sections/AchievementsSection';
-import Contact from '../pages/Contact'; // Use the real Contact page component
+import Education from '../sections/Education';
+import Experience from '../sections/Experience';
+import Contact from '../pages/Contact';
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <Projects />
       <Certifications />
       <AchievementsSection />
+      <Education />
+      <Experience />
       <Contact />
     </div>
   );

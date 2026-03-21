@@ -18,6 +18,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: -30 }} 
             animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            className="hero-text-content"
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
           >
             <h1 className="text-gradient" style={{
@@ -42,7 +43,7 @@ const Hero = () => {
               Call me Abhi 👋
             </span>
             
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
+            <div className="hero-btn-group" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
               <Link to="/about" className="btn btn-primary">
                 Read My Journey <ArrowRight size={18} />
               </Link>

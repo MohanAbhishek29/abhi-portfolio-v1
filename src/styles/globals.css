@@ -386,12 +386,29 @@ a:hover {
     .profile-img-container {
         height: 320px;
         max-width: 300px;
-        margin-top: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        order: -1;
+    }
+
+    .hero-text-content {
+        order: 2;
+        align-items: center !important;
+    }
+
+    .hero-text-content h1,
+    .hero-text-content h2,
+    .hero-text-content p {
+        text-align: center;
+    }
+
+    .hero-btn-group {
+        justify-content: center !important;
     }
 
     .responsive-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 }
 
