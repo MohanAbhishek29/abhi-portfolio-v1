@@ -15,7 +15,7 @@ const projectEnhancements = {
 
 const Projects = () => {
   const { projects } = portfolioData;
-  const displayProjects = projects.slice(0, 4).map(p => ({
+  const displayProjects = projects.slice(0, 3).map(p => ({
     ...p,
     ...projectEnhancements[p.id]
   }));
