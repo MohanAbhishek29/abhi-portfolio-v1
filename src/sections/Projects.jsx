@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const projectEnhancements = {
   p1: { category: 'Frontend', image: '/assets/images/dosa_house.png' },
-  p2: { category: 'Full Stack', image: '/assets/images/turnstile_access.png', objectPosition: 'top' },
+  p2: { category: 'Cloud', image: '/assets/images/turnstile_access.png', objectPosition: 'top' },
   p3: { category: 'Full Stack', image: '/assets/images/quick_suggest.png' },
   p4: { category: 'Full Stack', image: '/assets/images/quick_serve.png', objectPosition: 'top' },
   p5: { category: 'Web App', image: '/assets/images/aws_class.png' },
