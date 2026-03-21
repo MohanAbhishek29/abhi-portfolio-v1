@@ -49,7 +49,7 @@ const Skills = () => {
   );
 
   return (
-    <section id="skills" className="section bg-alt">
+    <section id="skills" className="section">
       <div className="container">
         <h2 className="section-title">Technical Expertise</h2>
         

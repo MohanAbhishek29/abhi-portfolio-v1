@@ -8,28 +8,17 @@ const Hero = () => {
   const { personal } = portfolioData;
 
   return (
-    <section style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
+    <section id="hero" style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
       <div className="container">
         
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', alignItems: 'center', gap: '4rem' }}>
           
+          {/* Left Side: Text Content */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            style={{ 
-              width: '200px', height: '200px', borderRadius: '50%', overflow: 'hidden', 
-              border: '4px solid var(--primary)', boxShadow: '0 0 20px rgba(110, 86, 207, 0.4)'
-            }}
-          >
-            <img src="/Profile.jpeg" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }} />
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }} 
-            animate={{ opacity: 1, y: 0 }} 
+            initial={{ opacity: 0, x: -30 }} 
+            animate={{ opacity: 1, x: 0 }} 
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-            style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
           >
             <h1 className="text-gradient" style={{
               fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: '1rem', lineHeight: 1.1
@@ -53,7 +42,7 @@ const Hero = () => {
               Call me Abhi 👋
             </span>
             
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'flex-start' }}>
               <Link to="/about" className="btn btn-primary">
                 Read My Journey <ArrowRight size={18} />
               </Link>
@@ -69,6 +58,19 @@ const Hero = () => {
                 </a>
               </div>
             </div>
+          </motion.div>
+
+          {/* Right Side: Large Rectangular Image */}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            style={{ 
+              width: '100%', height: '500px', borderRadius: '24px', overflow: 'hidden', 
+              border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+            }}
+          >
+            <img src="/Profile.jpeg" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }} />
           </motion.div>
         
         </div>

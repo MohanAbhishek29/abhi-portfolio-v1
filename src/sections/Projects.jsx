@@ -22,7 +22,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="section relative">
+    <section id="projects" className="section relative bg-alt">
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         <h2 className="section-title">Featured Projects</h2>
         

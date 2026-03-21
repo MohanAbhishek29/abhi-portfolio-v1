@@ -50,8 +50,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="page-container container" style={{ paddingTop: '120px', paddingBottom: '80px' }}>
-      <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+    <section id="contact" className="page-container section bg-alt" style={{ paddingTop: '80px', paddingBottom: '80px' }}>
+      <div className="container">
+        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
         <h2 className="section-title text-gradient" style={{ fontSize: '3rem', display: 'inline-block', marginBottom: '1rem' }}>
           Initialize Connection
         </h2>
@@ -259,7 +260,8 @@ const Contact = () => {
           </form>
         </motion.div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 
