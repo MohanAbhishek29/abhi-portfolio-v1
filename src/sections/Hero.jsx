@@ -11,7 +11,7 @@ const Hero = () => {
     <section id="hero" style={{ position: 'relative', minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
       <div className="container">
         
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', alignItems: 'center', gap: '4rem' }}>
+        <div className="responsive-grid">
           
           {/* Left Side: Text Content */}
           <motion.div 
@@ -65,11 +65,7 @@ const Hero = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            style={{ 
-              width: '100%', maxWidth: '380px', height: '400px', borderRadius: '24px', overflow: 'hidden', 
-              border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)',
-              margin: '0 auto'
-            }}
+            className="profile-img-container"
           >
             <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)' }} />
           </motion.div>
@@ -79,15 +75,16 @@ const Hero = () => {
 
       {/* Floating Scroll Indicator */}
       <motion.div
-        animate={{ y: [0, 10, 0] }}
+        animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-        style={{ position: 'absolute', bottom: '1.5rem', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer', color: 'var(--text-secondary)', zIndex: 10 }}
+        style={{ position: 'absolute', bottom: '1rem', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer', color: 'var(--text-secondary)', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.2rem' }}
         onClick={() => {
           const nextSection = document.getElementById('about');
           if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        <ChevronDown size={32} />
+        <span style={{ fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>Scroll Down</span>
+        <ChevronDown size={28} />
       </motion.div>
     </section>
   );
