@@ -71,7 +71,7 @@ const Hero = () => {
               margin: '0 auto'
             }}
           >
-            <img src="/Profile.jpeg" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }} />
+            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }} />
           </motion.div>
         
         </div>

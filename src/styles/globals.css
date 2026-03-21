@@ -222,6 +222,15 @@ a:hover {
     animation: gradientText 5s linear infinite;
 }
 
+.logo-gradient-mask {
+    background: var(--accent-gradient);
+    background-size: 200% auto;
+    animation: gradientText 5s linear infinite;
+    -webkit-mask: url('/Logo.png') no-repeat left center / contain;
+    mask: url('/Logo.png') no-repeat left center / contain;
+    display: inline-block;
+}
+
 @keyframes gradientText {
     to { background-position: 200% center; }
 }

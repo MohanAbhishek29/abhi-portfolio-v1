@@ -46,8 +46,8 @@ const Navbar = () => {
       zIndex: 1000, display: 'flex', alignItems: 'center', transition: 'all 0.3s ease'
     }}>
       <div className="container" style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" style={{ fontFamily: '"Space Grotesk", sans-serif', fontSize: '1.4rem', fontWeight: 700, color: 'var(--text-primary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem', letterSpacing: '-0.03em' }}>
-          Portfolio
+        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} aria-label="Home">
+          <div className="logo-gradient-mask" style={{ width: '140px', height: '36px' }}></div>
         </Link>
 
         {/* Desktop Links */}
