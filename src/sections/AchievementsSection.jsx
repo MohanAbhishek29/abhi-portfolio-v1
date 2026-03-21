@@ -14,10 +14,17 @@ const achievementImages = {
 
 const AchievementsSection = () => {
   const { achievements } = portfolioData;
-  const displayAchievements = achievements.slice(0, 3).map(ach => ({
-    ...ach,
-    image: achievementImages[ach.title] || ''
-  }));
+  
+  // Explicitly requested Home Page achievements
+  const homeAchievements = ['Web-A-Thon 2.0', 'AWS Cloud Architecture Badge', 'Cambridge Lingual Skill Exam'];
+  
+  const displayAchievements = achievements
+    .filter(ach => homeAchievements.includes(ach.title))
+    .slice(0, 3) // Failsafe
+    .map(ach => ({
+      ...ach,
+      image: achievementImages[ach.title] || ''
+    }));
 
   return (
     <section id="achievements" className="section bg-alt">
