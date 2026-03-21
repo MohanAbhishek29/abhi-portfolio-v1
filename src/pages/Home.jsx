@@ -4,6 +4,7 @@ import AboutSection from '../sections/AboutSection';
 import Skills from '../sections/Skills';
 import Projects from '../sections/Projects';
 import Certifications from '../sections/Certifications';
+import AchievementsSection from '../sections/AchievementsSection';
 import Contact from '../pages/Contact'; // Use the real Contact page component
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Skills />
       <Projects />
       <Certifications />
+      <AchievementsSection />
       <Contact />
     </div>
   );

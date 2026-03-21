@@ -21,16 +21,16 @@ const Hero = () => {
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}
           >
             <h1 className="text-gradient" style={{
-              fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: '1rem', lineHeight: 1.1
+              fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', fontWeight: 900, letterSpacing: '-0.02em', marginBottom: '1rem', lineHeight: 1.1
             }}>
               Hi, I'm Jayavarapu Mohan Abhishek Gupta
             </h1>
             
-            <h2 style={{ fontSize: '1.4rem', fontWeight: 500, color: 'var(--text-primary)', maxWidth: '800px', marginBottom: '1.5rem', lineHeight: 1.5 }}>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', maxWidth: '800px', marginBottom: '1.25rem', lineHeight: 1.5 }}>
               Aspiring Cloud Architect ☁️ | Turning Coffee & Chaos into Scalable AWS Systems ⚙️
             </h2>
             
-            <p style={{ fontSize: '1.125rem', maxWidth: '750px', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '1rem', maxWidth: '750px', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.6 }}>
               I'm a B.Tech 3rd-year student at LPU with a cloud-first mindset. While writing clean code is essential, my true passion lies in architecting the infrastructure behind it. I focus on deploying, scaling, and ensuring the server doesn't break a sweat when 10,000 users hit 'refresh'. Specializing in AWS, backend logic, and smart system design.
             </p>
 
@@ -50,24 +50,25 @@ const Hero = () => {
                 <Download size={18} /> Download Resume
               </a>
               <div style={{ display: 'flex', gap: '1rem' }}>
-                <a href={personal.github} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ width: '48px', padding: 0 }}>
+                <a href={personal.github} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ width: '48px', height: '48px', padding: 0, minWidth: '48px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Github size={20} />
                 </a>
-                <a href={personal.linkedin} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ width: '48px', padding: 0 }}>
+                <a href={personal.linkedin} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ width: '48px', height: '48px', padding: 0, minWidth: '48px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Linkedin size={20} />
                 </a>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Side: Large Rectangular Image */}
+          {/* Right Side: Medium Rectangular Image */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             style={{ 
-              width: '100%', height: '500px', borderRadius: '24px', overflow: 'hidden', 
-              border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'
+              width: '100%', maxWidth: '380px', height: '400px', borderRadius: '24px', overflow: 'hidden', 
+              border: '1px solid var(--border-color)', boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)',
+              margin: '0 auto'
             }}
           >
             <img src="/Profile.jpeg" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }} />
