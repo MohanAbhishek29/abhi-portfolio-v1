@@ -1,6 +1,6 @@
 import React from 'react';
 import portfolioData from '../data/portfolio.json';
-import { Github, Linkedin, Download, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, Download, ArrowRight, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ const Hero = () => {
   const { personal } = portfolioData;
 
   return (
-    <section id="hero" style={{ minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
+    <section id="hero" style={{ position: 'relative', minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
       <div className="container">
         
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', alignItems: 'center', gap: '4rem' }}>
@@ -76,6 +76,19 @@ const Hero = () => {
         
         </div>
       </div>
+
+      {/* Floating Scroll Indicator */}
+      <motion.div
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+        style={{ position: 'absolute', bottom: '1.5rem', left: '50%', transform: 'translateX(-50%)', cursor: 'pointer', color: 'var(--text-secondary)', zIndex: 10 }}
+        onClick={() => {
+          const nextSection = document.getElementById('about');
+          if (nextSection) nextSection.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+        <ChevronDown size={32} />
+      </motion.div>
     </section>
   );
 };
