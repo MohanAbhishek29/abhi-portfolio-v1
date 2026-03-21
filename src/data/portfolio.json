@@ -207,6 +207,13 @@
   ],
   "achievements": [
     { 
+      "title": "Solved 200+ LeetCode Problems", 
+      "issuer": "LeetCode", 
+      "date": "Present",
+      "link": "https://leetcode.com/u/mohanabhishek29/",
+      "modalContent": "Demonstrated strong algorithmic thinking and an active coding habit by successfully solving over 200 complex competitive programming and data structure problems."
+    },
+    { 
       "title": "Web-A-Thon 2.0", 
       "issuer": "LPU", 
       "date": "Feb 2026",

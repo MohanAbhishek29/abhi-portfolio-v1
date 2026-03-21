@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const achievementImages = {
+  'Solved 200+ LeetCode Problems': '/assets/images/leetcode.png',
   'AWS Cloud Architecture Badge': '/assets/images/aws_badge.png',
   'Web-A-Thon 2.0': '/assets/images/web_a_thon.png',
   'Binary Blitz Hackathon': '/assets/images/binary_blitz.png',
