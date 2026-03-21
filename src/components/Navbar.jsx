@@ -38,6 +38,15 @@ const Navbar = () => {
     }
   };
 
+  const location = useLocation();
+
+  const handleHomeClick = (e) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, width: '100%', height: '70px',
@@ -46,7 +55,7 @@ const Navbar = () => {
       zIndex: 1000, display: 'flex', alignItems: 'center', transition: 'all 0.3s ease'
     }}>
       <div className="container" style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Link to="/" className="nav-logo-link" aria-label="Home">
+        <Link to="/" className="nav-logo-link" aria-label="Home" onClick={handleHomeClick}>
           <div className="logo-gradient-mask nav-logo-mask"></div>
         </Link>
 
@@ -62,7 +71,12 @@ const Navbar = () => {
             { name: 'Resume', path: '/resume' },
             { name: 'Contact', path: '/contact' }
           ].map(link => (
-            <Link key={link.name} to={link.path} style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none' }}>
+            <Link 
+              key={link.name} 
+              to={link.path} 
+              onClick={(e) => link.path === '/' && handleHomeClick(e)}
+              style={{ color: 'var(--text-secondary)', fontSize: '0.875rem', fontWeight: 500, textDecoration: 'none' }}
+            >
               {link.name}
             </Link>
           ))}
@@ -113,9 +127,17 @@ const Navbar = () => {
             { name: 'Resume', path: '/resume' },
             { name: 'Contact', path: '/contact' }
           ].map(link => (
-            <Link key={link.name} to={link.path} onClick={() => setIsMenuOpen(false)} style={{
-              color: 'var(--text-primary)', padding: '0.75rem 0', fontWeight: 500, borderBottom: '1px solid var(--border-color)', textDecoration: 'none'
-            }}>
+            <Link 
+              key={link.name} 
+              to={link.path} 
+              onClick={(e) => {
+                setIsMenuOpen(false);
+                if (link.path === '/') handleHomeClick(e);
+              }} 
+              style={{
+                color: 'var(--text-primary)', padding: '0.75rem 0', fontWeight: 500, borderBottom: '1px solid var(--border-color)', textDecoration: 'none'
+              }}
+            >
               {link.name}
             </Link>
           ))}
