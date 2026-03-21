@@ -47,7 +47,7 @@ const Navbar = () => {
     }}>
       <div className="container" style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} aria-label="Home">
-          <div className="logo-gradient-mask" style={{ width: '220px', height: '48px', transform: 'scale(1.2)', transformOrigin: 'left center' }}></div>
+          <div className="logo-gradient-mask" style={{ width: '250px', height: '65px', transform: 'scale(2.5)', transformOrigin: 'left center' }}></div>
         </Link>
 
         {/* Desktop Links */}
