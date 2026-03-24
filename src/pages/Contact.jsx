@@ -148,13 +148,13 @@ const Contact = () => {
           <form ref={formRef} onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Full Name</label>
+                <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Your Name</label>
                 <input
                   type="text"
                   name="from_name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Mohan Abhishek"
+                  placeholder="Enter your full name"
                   required
                   style={{
                     padding: '0.8rem 1rem', borderRadius: '8px', border: '1px solid var(--border-color)',
@@ -165,13 +165,13 @@ const Contact = () => {
                 />
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Email User</label>
+                <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Your Email</label>
                 <input
                   type="email"
                   name="from_email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="abhi@aws.com"
+                  placeholder="Enter your email address"
                   required
                   style={{
                     padding: '0.8rem 1rem', borderRadius: '8px', border: '1px solid var(--border-color)',
@@ -184,13 +184,13 @@ const Contact = () => {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Subject Query</label>
+              <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>What is your query?</label>
               <input
                 type="text"
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                placeholder="Cloud Infrastructure Inquiry"
+                placeholder="What are we discussing?"
                 required
                 style={{
                   padding: '0.8rem 1rem', borderRadius: '8px', border: '1px solid var(--border-color)',
@@ -202,13 +202,13 @@ const Contact = () => {
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-              <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Data Payload (Message)</label>
+              <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Description</label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows="5"
-                placeholder="Describe your project architecture..."
+                placeholder="Tell me more about your project or query..."
                 required
                 style={{
                   padding: '0.8rem 1rem', borderRadius: '8px', border: '1px solid var(--border-color)',
