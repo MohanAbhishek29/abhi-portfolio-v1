@@ -46,7 +46,14 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    if (name === 'from_name') {
+      setFormData({ ...formData, name: value });
+    } else if (name === 'from_email') {
+      setFormData({ ...formData, email: value });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   return (
@@ -144,7 +151,7 @@ const Contact = () => {
                 <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Full Name</label>
                 <input
                   type="text"
-                  name="name"
+                  name="from_name"
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Mohan Abhishek"
@@ -161,7 +168,7 @@ const Contact = () => {
                 <label style={{ fontSize: '0.875rem', fontWeight: 500, color: 'var(--text-secondary)' }}>Email User</label>
                 <input
                   type="email"
-                  name="email"
+                  name="from_email"
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="abhi@aws.com"
