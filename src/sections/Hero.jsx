@@ -67,22 +67,22 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="profile-img-container"
-            style={{ position: 'relative' }}
+            style={{ position: 'relative', zIndex: 1 }}
           >
             {/* Abstract Doodle Background */}
             <div style={{
-              position: 'absolute', top: '-10%', left: '-10%', width: '120%', height: '120%', zIndex: -1,
-              backgroundImage: 'radial-gradient(var(--accent-primary) 1px, transparent 1px)',
-              backgroundSize: '24px 24px', opacity: 0.15,
-              maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)',
-              WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)'
+              position: 'absolute', top: '-15%', left: '-15%', width: '130%', height: '130%', zIndex: -1,
+              backgroundImage: 'radial-gradient(#6e56cf 2px, transparent 2px)',
+              backgroundSize: '24px 24px', opacity: 0.5,
+              maskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, black 30%, transparent 70%)'
             }}></div>
             <div style={{
-              position: 'absolute', bottom: '-15px', right: '-15px', width: '100px', height: '100px', zIndex: -1,
-              border: '2px dashed var(--primary)', borderRadius: '12px', opacity: 0.3
+              position: 'absolute', bottom: '-20px', right: '-20px', width: '120px', height: '120px', zIndex: -1,
+              border: '2px dashed #6e56cf', borderRadius: '12px', opacity: 0.5
             }}></div>
             
-            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)', position: 'relative', zIndex: 1 }} />
+            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)', position: 'relative', zIndex: 2 }} />
           </motion.div>
         
         </div>

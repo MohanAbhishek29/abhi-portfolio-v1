@@ -88,6 +88,7 @@ const Skills = () => {
               <div>
                 <h3 style={{ fontSize: '1.15rem', color: 'var(--text-primary)', margin: '0 0 0.75rem 0', fontWeight: 600 }}>{skill.name}</h3>
                 <span style={{ 
+                  display: 'inline-block', whiteSpace: 'nowrap',
                   fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: 500, 
                   padding: '0.3rem 0.8rem', background: 'rgba(255,255,255,0.03)', 
                   border: '1px solid var(--border-color)', borderRadius: '99px' 
