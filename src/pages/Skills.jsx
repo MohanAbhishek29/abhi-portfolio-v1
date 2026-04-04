@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Github, Code } from 'lucide-react';
 import portfolioData from '../data/portfolio.json';
 
 const mapSkillsFromData = () => {
@@ -82,7 +83,13 @@ const Skills = () => {
                 display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem',
                 marginBottom: '0.5rem', color: 'var(--text-primary)', boxShadow: 'inset 0 2px 10px rgba(0,0,0,0.1)'
               }}>
-                <i className={`${skill.icon} colored`}></i>
+                {skill.name === 'GitHub' ? (
+                  <Github size={44} color="var(--text-primary)" strokeWidth={1.5} />
+                ) : skill.name === 'Data Structures & Algorithms' ? (
+                  <Code size={44} color="var(--text-primary)" strokeWidth={1.5} />
+                ) : (
+                  <i className={`${skill.icon} colored`}></i>
+                )}
               </div>
               
               <div>

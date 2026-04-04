@@ -1,6 +1,7 @@
 import React from 'react';
 import portfolioData from '../data/portfolio.json';
 import { motion } from 'framer-motion';
+import { Github, Code } from 'lucide-react';
 
 const Skills = () => {
   const { skills } = portfolioData;
@@ -40,7 +41,14 @@ const Skills = () => {
             onMouseOver={(e) => { e.currentTarget.style.borderColor = 'var(--accent-primary)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
             onMouseOut={(e) => { e.currentTarget.style.borderColor = 'var(--border-color)'; e.currentTarget.style.color = 'var(--text-secondary)'; }}
             >
-              <i className={`${skill.icon} colored`} style={{ fontSize: '1.125rem' }}></i> {skill.name}
+              {skill.name === 'GitHub' ? (
+                <Github size={18} color="currentColor" />
+              ) : skill.name === 'Data Structures & Algorithms' ? (
+                <Code size={18} color="currentColor" />
+              ) : (
+                <i className={`${skill.icon} colored`} style={{ fontSize: '1.125rem' }}></i>
+              )}
+              {skill.name}
             </div>
           ))
         }
