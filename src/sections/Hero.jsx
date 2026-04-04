@@ -1,6 +1,6 @@
 import React from 'react';
 import portfolioData from '../data/portfolio.json';
-import { Github, Linkedin, Download, ArrowRight, ChevronDown } from 'lucide-react';
+import { Github, Linkedin, ArrowRight, ChevronDown, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
@@ -47,9 +47,9 @@ const Hero = () => {
               <Link to="/about" className="btn btn-primary">
                 Read My Journey <ArrowRight size={18} />
               </Link>
-              <a href={personal.resume} download="Mohan_Abhishek_Resume.pdf" target="_blank" rel="noreferrer" className="btn btn-secondary">
-                <Download size={18} /> Download Resume
-              </a>
+              <Link to="/trainings" state={{ activeTab: 'My CV' }} className="btn btn-secondary">
+                <FileText size={18} /> Check my CV
+              </Link>
               <div style={{ display: 'flex', gap: '1rem' }}>
                 <a href={personal.github} target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ width: '48px', height: '48px', padding: 0, minWidth: '48px', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   <Github size={20} />
@@ -61,14 +61,28 @@ const Hero = () => {
             </div>
           </motion.div>
 
-          {/* Right Side: Medium Rectangular Image */}
+          {/* Right Side: Medium Rectangular Image with Doodle Background */}
           <motion.div 
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="profile-img-container"
+            style={{ position: 'relative' }}
           >
-            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)' }} />
+            {/* Abstract Doodle Background */}
+            <div style={{
+              position: 'absolute', top: '-10%', left: '-10%', width: '120%', height: '120%', zIndex: -1,
+              backgroundImage: 'radial-gradient(var(--accent-primary) 1px, transparent 1px)',
+              backgroundSize: '24px 24px', opacity: 0.15,
+              maskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)',
+              WebkitMaskImage: 'radial-gradient(ellipse at center, black 40%, transparent 70%)'
+            }}></div>
+            <div style={{
+              position: 'absolute', bottom: '-15px', right: '-15px', width: '100px', height: '100px', zIndex: -1,
+              border: '2px dashed var(--primary)', borderRadius: '12px', opacity: 0.3
+            }}></div>
+            
+            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)', position: 'relative', zIndex: 1 }} />
           </motion.div>
         
         </div>

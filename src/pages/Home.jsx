@@ -18,8 +18,8 @@ const Home = () => {
       <Projects />
       <Certifications />
       <AchievementsSection />
-      <Education />
       <Experience />
+      <Education />
       <Contact />
     </div>
   );

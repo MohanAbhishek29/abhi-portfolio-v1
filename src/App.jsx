@@ -11,7 +11,8 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Certifications from './pages/Certifications';
 import Achievements from './pages/Achievements';
-import Resume from './pages/Resume';
+import Trainings from './pages/Trainings';
+import EducationPage from './pages/Education';
 import Contact from './pages/Contact';
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
             <Route path="/projects" element={<PageTransition><Projects /></PageTransition>} />
             <Route path="/certifications" element={<PageTransition><Certifications /></PageTransition>} />
             <Route path="/achievements" element={<PageTransition><Achievements /></PageTransition>} />
-            <Route path="/resume" element={<PageTransition><Resume /></PageTransition>} />
+            <Route path="/trainings" element={<PageTransition><Trainings /></PageTransition>} />
+            <Route path="/education" element={<PageTransition><EducationPage /></PageTransition>} />
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
           </Routes>
         </AnimatePresence>

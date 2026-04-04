@@ -68,7 +68,8 @@ const Navbar = () => {
             { name: 'Projects', path: '/projects' },
             { name: 'Certifications', path: '/certifications' },
             { name: 'Achievements', path: '/achievements' },
-            { name: 'Resume', path: '/resume' },
+            { name: 'Trainings & Info', path: '/trainings' },
+            { name: 'Education', path: '/education' },
             { name: 'Contact', path: '/contact' }
           ].map(link => (
             <Link 
@@ -124,7 +125,8 @@ const Navbar = () => {
             { name: 'Projects', path: '/projects' },
             { name: 'Certifications', path: '/certifications' },
             { name: 'Achievements', path: '/achievements' },
-            { name: 'Resume', path: '/resume' },
+            { name: 'Trainings & Info', path: '/trainings' },
+            { name: 'Education', path: '/education' },
             { name: 'Contact', path: '/contact' }
           ].map(link => (
             <Link 

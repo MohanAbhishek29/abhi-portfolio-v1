@@ -40,7 +40,6 @@
     "languages": [
       { "name": "C", "icon": "devicon-c-plain" },
       { "name": "C++", "icon": "devicon-cplusplus-plain" },
-      { "name": "Java", "icon": "devicon-java-plain" },
       { "name": "Python", "icon": "devicon-python-plain" },
       { "name": "HTML", "icon": "devicon-html5-plain" },
       { "name": "CSS", "icon": "devicon-css3-plain" },
