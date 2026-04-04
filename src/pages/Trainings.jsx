@@ -91,20 +91,22 @@ const Trainings = () => {
                   }}
                   onClick={() => window.open(personal.resume, '_blank')}
                 >
-                  <div style={{ padding: '2.5rem', color: '#1e293b', fontFamily: 'system-ui, sans-serif' }}>
-                    <h1 style={{ textAlign: 'center', margin: '0 0 0.5rem 0', fontSize: '2rem', color: '#0f172a', fontWeight: 800 }}>{personal.name}</h1>
-                    <p style={{ textAlign: 'center', fontSize: '0.9rem', color: '#475569', fontWeight: 500 }}>{personal.email}  |  {personal.phone}</p>
-                    <hr style={{ margin: '1.5rem 0', borderColor: '#cbd5e1' }} />
-                    <h2 style={{ fontSize: '1.1rem', color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Professional Summary</h2>
-                    <p style={{ fontSize: '0.95rem', lineHeight: 1.6, color: '#475569' }}>{personal.bio}</p>
-                    <h2 style={{ fontSize: '1.1rem', color: '#334155', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '1.5rem' }}>Cloud Infrastructure</h2>
-                    <p style={{ fontSize: '0.95rem', color: '#475569' }}>AWS EC2, S3, RDS, Lambda, IAM, Terraform, Docker, Kubernetes.</p>
-                  </div>
+                  
+                  {/* Native PDF Preview */}
+                  <iframe 
+                    src={`${personal.resume}#toolbar=0&navpanes=0&scrollbar=0`} 
+                    style={{ 
+                      width: '100%', height: '150%', border: 'none', pointerEvents: 'none',
+                      userSelect: 'none'
+                    }}
+                    title="CV Preview"
+                    tabIndex={-1}
+                  />
                   
                   {/* Faded overlay */}
                   <div style={{
                     position: 'absolute', bottom: 0, left: 0, width: '100%', height: '200px',
-                    background: 'linear-gradient(to bottom, rgba(15,23,42,0), rgba(15,23,42,1))',
+                    background: 'linear-gradient(to bottom, transparent, var(--bg-card))',
                     display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingBottom: '2.5rem'
                   }}>
                     <span style={{ 
