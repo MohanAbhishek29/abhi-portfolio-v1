@@ -110,24 +110,24 @@
     },
     {
         "id": "p2",
-        "title": "Cloud-Based-Turnstile-Access-Control-and-Attendance-System",
-        "date": "Aug 2025",
-        "tags": ["IoT", "Cloud"],
+        "title": "Serverless Turnstile Access System",
+        "date": "May 2026",
+        "tags": ["AWS", "Serverless", "Python"],
         "accent": true,
-        "description": "Secure access control system integrating ID card scanning and fingerprint authentication for enhanced security.",
-        "githubLink": "https://github.com/MohanAbhishek29/Cloud-Based-Turnstile-Access-Control-and-Attendance-System",
-        "modalContent": "Architected a real-time attendance system connecting hardware sensors to a cloud backend. Implemented secure authentication protocols for ID scanning and facial recognition data. This project taught me how to handle asynchronous data streams and ensure reliable connectivity between IoT devices and cloud infrastructure."
+        "description": "An event-driven serverless access system built utilizing AWS Lambda, API Gateway, and Amazon RDS.",
+        "githubLink": "https://github.com/MohanAbhishek29/Serverless-Turnstile-Access-System",
+        "modalContent": "Engineered a scalable, event-driven turnstile access system using serverless architecture on AWS. Integrated API Gateway with AWS Lambda functions to handle real-time access requests, backed by a robust Amazon RDS database for data persistence. This project highlights my expertise in cloud computing, serverless deployments, and Python backend development."
     },
     {
         "id": "p1",
         "title": "Dosa House",
         "date": "Jun 2025",
-        "tags": ["HTML5", "CSS3", "JavaScript"],
+        "tags": ["React", "Full Stack", "JavaScript"],
         "accent": false,
-        "description": "Full-featured restaurant website with interactive UI, optimized for performance and accessibility across devices.",
+        "description": "Full-featured full stack restaurant web application with interactive UI, optimized for performance.",
         "githubLink": "https://github.com/MohanAbhishek29/Dosa-House",
-        "demoLink": "https://dosa-house.netlify.app/",
-        "modalContent": "Built a high-performance restaurant landing page focusing on fluid UX and responsive design. Learned how to manage complex component state and implemented advanced CSS animations to mimic a premium dining experience. Optimized for accessibility and fast load times."
+        "demoLink": "https://dosa-house-7bd70.web.app",
+        "modalContent": "Built a high-performance full stack restaurant application focusing on fluid UX and responsive design. Learned how to manage complex component state and implemented advanced features to mimic a premium dining experience. Optimized for accessibility and fast load times."
     }
   ],
   "experience": [

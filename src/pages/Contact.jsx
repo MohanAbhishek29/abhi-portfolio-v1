@@ -33,7 +33,9 @@ const Contact = () => {
       return;
     }
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, {
+      publicKey: PUBLIC_KEY,
+    })
       .then(() => {
         setStatus('success');
         setFormData({ name: '', email: '', subject: '', message: '' });
