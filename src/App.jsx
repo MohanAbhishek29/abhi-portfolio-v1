@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import PageTransition from './components/PageTransition';
+import BackToTop from './components/BackToTop';
 
 // Pages
 import Home from './pages/Home';
@@ -14,6 +15,7 @@ import Achievements from './pages/Achievements';
 import Trainings from './pages/Trainings';
 import EducationPage from './pages/Education';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 function App() {
   const location = useLocation();
@@ -37,9 +39,11 @@ function App() {
             <Route path="/trainings" element={<PageTransition><Trainings /></PageTransition>} />
             <Route path="/education" element={<PageTransition><EducationPage /></PageTransition>} />
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
+            <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>
         </AnimatePresence>
       </main>
+      <BackToTop />
       <footer style={{
         borderTop: '1px solid var(--border-color)', padding: '2rem 0',
         background: 'var(--bg-card)', backdropFilter: 'blur(10px)', color: 'var(--text-muted)', fontSize: '0.875rem', textAlign: 'center'
@@ -53,3 +57,4 @@ function App() {
 }
 
 export default App;
+

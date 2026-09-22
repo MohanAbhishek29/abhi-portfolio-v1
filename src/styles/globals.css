@@ -437,3 +437,60 @@ a:hover {
     border-color: var(--text-primary);
     background-color: var(--bg-alt);
 }
+
+/* Typewriter Cursor */
+.typewriter-cursor {
+    display: inline-block;
+    color: var(--accent-primary);
+    font-weight: 300;
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    z-index: 900;
+    transition: box-shadow 0.3s ease;
+}
+
+.back-to-top:hover {
+    box-shadow: 0 6px 30px rgba(56, 189, 248, 0.5);
+}
+
+[data-theme="dark"] .back-to-top {
+    box-shadow: 0 4px 20px rgba(110, 86, 207, 0.4);
+}
+
+[data-theme="dark"] .back-to-top:hover {
+    box-shadow: 0 6px 30px rgba(110, 86, 207, 0.6);
+}
+
+/* Nav Link Hover */
+.nav-link:hover {
+    color: var(--accent-primary) !important;
+}
+
+/* Lazy load image fade in */
+img[loading="lazy"] {
+    transition: opacity 0.3s ease;
+}
+

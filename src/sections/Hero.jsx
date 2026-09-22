@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import portfolioData from '../data/portfolio.json';
 import { Github, Linkedin, ArrowRight, ChevronDown, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+const roles = [
+  'Cloud Architect ☁️',
+  'Backend Engineer ⚙️',
+  'AWS Enthusiast 🚀',
+  'System Designer 🧠'
+];
+
 const Hero = () => {
   const { personal } = portfolioData;
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[roleIndex];
+    let timeout;
+
+    if (!isDeleting) {
+      if (displayText.length < currentRole.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        }, 80);
+      } else {
+        timeout = setTimeout(() => setIsDeleting(true), 2000);
+      }
+    } else {
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 40);
+      } else {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, roleIndex]);
 
   return (
     <section id="hero" style={{ position: 'relative', minHeight: 'calc(100vh - 70px)', display: 'flex', flexDirection: 'column', justifyContent: 'center', paddingTop: '4rem', paddingBottom: '3rem' }}>
@@ -27,8 +63,9 @@ const Hero = () => {
               Hi, I'm Jayavarapu Mohan Abhishek Gupta
             </h1>
             
-            <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', maxWidth: '800px', marginBottom: '1.25rem', lineHeight: 1.5 }}>
-              Aspiring Cloud Architect ☁️ | Turning Coffee & Chaos into Scalable AWS Systems ⚙️
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 500, color: 'var(--text-primary)', maxWidth: '800px', marginBottom: '1.25rem', lineHeight: 1.5, minHeight: '1.9em' }}>
+              Aspiring <span className="text-gradient" style={{ fontWeight: 700 }}>{displayText}</span>
+              <span className="typewriter-cursor">|</span>
             </h2>
             
             <p style={{ fontSize: '1rem', maxWidth: '750px', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.6 }}>
@@ -82,7 +119,7 @@ const Hero = () => {
               border: '2px dashed #6e56cf', borderRadius: '12px', opacity: 0.5
             }}></div>
             
-            <img src="/Profile.png" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)', position: 'relative', zIndex: 2 }} />
+            <img src="/Profile.jpg" alt="Jayavarapu Mohan Abhishek Gupta" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', transform: 'scale(1.25)', position: 'relative', zIndex: 2 }} loading="lazy" />
           </motion.div>
         
         </div>

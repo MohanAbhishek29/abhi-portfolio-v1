@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 const certExtras = {
-  "Social Networks": { image: '/assets/images/social_networks.png', logo: '/NPTEL_logo.png' },
+  "Social Networks": { image: '/assets/images/social_networks.png', logo: '/NPTEL_logo.jpg' },
   "ChatGPT Made Easy: AI Essentials for Beginners": { image: '/assets/images/chatgpt_ai.png', logo: '/Udemy_Logo.png' },
   "Build Generative AI Apps and Solutions": { image: '/assets/images/genai_neural.png', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/1200px-Infosys_logo.svg.png' },
   "Master Generative AI & Tools": { image: '/assets/images/master_gen_ai.png', logo: '/Udemy_Logo.png' },

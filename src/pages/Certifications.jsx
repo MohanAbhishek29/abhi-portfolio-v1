@@ -8,7 +8,7 @@ import Modal from '../components/Modal';
 const certExtras = {
   "Social Networks": { 
     image: '/assets/images/social_networks.png', 
-    logo: '/NPTEL_logo.png'
+    logo: '/NPTEL_logo.jpg'
   },
   "ChatGPT Made Easy: AI Essentials for Beginners": {
     image: '/assets/images/chatgpt_ai.png',
